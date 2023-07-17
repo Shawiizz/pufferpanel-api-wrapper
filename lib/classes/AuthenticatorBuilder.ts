@@ -69,6 +69,8 @@ export class PufferAuthenticatorBuilder {
                 }
             );
 
+            console.log(response.data);
+
             if (response.data?.expires_in) {
                 setTimeout(() => {
                     console.log('Token has expired, fetching new one')
@@ -78,6 +80,9 @@ export class PufferAuthenticatorBuilder {
             }
 
             this.accessToken = response.data.access_token;
+
+            if(!this.accessToken)
+                console.error('Failed to authenticate, check your credentials');
         } catch (error) {
             console.log('Error :', error);
             throw new Error('Failed to authenticate, check your credentials');

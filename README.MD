@@ -18,9 +18,13 @@ It's a WIP project, so there are still some endpoints missing, and my code isn't
 *Note: This wrapper is not affiliated with PufferPanel.*
 
 ## Getting started
-<b>This project isn't converted to a NPM installable module yet, so you'll have to use it manually.</b>
+Install the package with NPM:
+```bash
+npm install shawiizz/pufferpanel-api-wrapper
+```
 
-First, clone the repository and install the dependencies:
+### Want to contribute?
+Clone the repository and install the dependencies:
 ```bash
 git clone https://github.com/Shawiizz/pufferpanel-api-wrapper.git
 cd pufferpanel-api-wrapper

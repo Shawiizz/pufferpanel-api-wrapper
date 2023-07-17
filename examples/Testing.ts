@@ -1,12 +1,12 @@
-import {PufferClient} from "./classes/PufferClient";
-import {PufferAuthenticatorBuilder} from "./classes/AuthenticatorBuilder";
+import {PufferAuthenticatorBuilder} from "../lib/classes/AuthenticatorBuilder";
+import {PufferClient} from "../lib/classes/PufferClient";
 
 const clientId = '';
 const clientSecret = '';
 
 const test = async () => {
     const authenticator = new PufferAuthenticatorBuilder()
-        .withDomain('xxx.com')
+        .withDomain('yourdomain.com')
         .withClientId(clientId)
         .withClientSecret(clientSecret)
         .withSsl(true)
